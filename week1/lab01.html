@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Lab01</title>               
-    </head>    
-    <body>
-   <script>
-    let res = window.prompt("請輸入成績");
-    if(res==''){
-        document.write("此區域不可為空白");
-    }
-    else if(res<60){
-        document.write("不及格");
-    }
-    else if(res>=60 && res<70){
-        document.write("D");
-    }
-    else if(res>=70 && res<80){
-      document.write("C");
-    }
-    else if(res>80 && res<=90){
-        document.write("B");
-    }
-    else if(res>90 && res<=100){
-        document.write("A");
-    }
-    else{
-        document.write("請輸入100以內的數字");
-    }
-   </script>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20200330Lab01</title>
+</head>
+<body>
+    <script>
+        let res = window.prompt("請輸入成績");
+            if(res==''){
+                document.write("此區域不可為空白");
+            }
+            else if(res>=0 && res<60){   
+                document.write("E");                    //小於60分不及格 E級
+            }
+            else if(res>=60 && res<70){
+                document.write("D");                    //60~69分 D級
+            }
+            else if(res>=70 && res<80){
+            document.write("C");                        //70~79分 C級
+            }
+            else if(res>=80 && res<90){
+                document.write("B");                    //80~89分 B級
+            }
+            else if(res>=90 && res<=100){
+                document.write("A");                    //90~100分 A級
+            }
+            else{                               
+                document.write("請輸入0到100內的數字");  //小於0 或 大於100
+            }
+    </script>
+    
 </body>
 </html>
